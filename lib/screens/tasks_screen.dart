@@ -17,7 +17,6 @@ class TasksScreen extends StatelessWidget {
         ),
         onPressed: () {
           showModalBottomSheet(
-            context: context,
             isScrollControlled: true,
             builder: (context) => SingleChildScrollView(
               child: Container(
@@ -26,6 +25,7 @@ class TasksScreen extends StatelessWidget {
                 child: const AddTaskScreen(),
               ),
             ),
+            context: context,
           );
         },
       ),
